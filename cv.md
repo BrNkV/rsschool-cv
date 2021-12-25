@@ -8,3 +8,20 @@
 - [CodeWars](https://www.codewars.com/users/EveryBarry)
   
 <img alt="CW" src="https://www.codewars.com/users/EveryBarry/badges/large">
+
+---
+## About me
+
+I am 31 years old. An economist by profession. I have long wanted to learn how to develop useful services and applications. I study the frontend and backend. I really want to work in this area.
+
+---
+## Skills
+Basic in:
+* HTML
+* CSS
+* Git
+* JavaScript
+* ReactJS
+* VueJS
+* NodeJS
+* Laravel
