@@ -29,9 +29,9 @@ Basic in:
 ---
 ## Code Example
 
-solving tasks of CodeWars  
+### solving tasks of CodeWars  
 
-Count the number of JavaScript developers coming from Europe
+#### Count the number of JavaScript developers coming from Europe
 
 ```js
 function countDevelopers(list) {
@@ -41,7 +41,7 @@ function countDevelopers(list) {
 }
 ```
 
-Find the odd int
+#### Find the odd int
 ```js
 function findOdd(arr) {
   let count = 0;
@@ -54,3 +54,15 @@ function findOdd(arr) {
 };
 }
 ```
+---
+## Education
+
+- Курс «JavaScript v.2.0» [JavaScript v.2.0](https://itgid.info/course/javascript-2)
+- Курс «NodeJS» [NodeJS](https://itgid.info/course/nodejs)
+- Курс «ReactJS» [ReactJS](https://itgid.info/course/reactjs)
+- Курс «ООП в JS» [ООП в JS](https://itgid.info/course/object-js)
+- Курс «Функции в JavaScript 2021» [Функции в JavaScript 2021](https://itgid.info/course/function-2021)
+
+---
+## English
+My english is at a basic level B1.
