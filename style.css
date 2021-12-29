@@ -4,9 +4,56 @@
     box-sizing: border-box;
 }
 
-.wrapper {
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
     height: 100vh;
     background: #202124;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(155, 144, 0);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    font-size: 25px;
+    transition: .3s;
+}
+
+.nav-link:active {
+    color: rgb(18, 143, 137);
+}
+
+.header-content {
+    background-color: rgb(58, 48, 48);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-image{
+    height: 100%;
 }
