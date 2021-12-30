@@ -27,7 +27,7 @@
                 <!-- UL > LI -->
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="#summary" class="nav-link">Summary </a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me </a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                     <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
@@ -43,13 +43,18 @@
                 </div>
                 <div class="header-person">
                     <div class="header-name">
-                        <h1>Igor Burenkov</h1>
+                        <h1 class="header-title">Igor Burenkov</h1>
+                        <h2 class="header-subtitle">(Beginner) Web developer</h2>
                     </div>
                     <div class="header-contacts">
+                        <h2 class="header-contact-title" id="contacts">Contacts</h2>
                         <ul class="contacts-list">
-                            <li class="contacts-item"><a href="tel:+79811574035" class="contacts-phone" target="_self">Phone</a></li>
-                            <li class="contacts-item"><a href="mailto:burenkov.igor@gmail.com" class="contacts-email" target="_self">E-mail</a></li>
-                            <li class="contacts-item"><a href="https://t.me/burenkov" class="contacts-tg" target="_blank">Telegram</a></li>
+                            <li class="contacts-item"><a href="tel:+79811574035" class="contacts-phone"
+                                    target="_self">Phone</a></li>
+                            <li class="contacts-item"><a href="mailto:burenkov.igor@gmail.com" class="contacts-email"
+                                    target="_self">E-mail</a></li>
+                            <li class="contacts-item"><a href="https://t.me/burenkov" class="contacts-tg"
+                                    target="_blank">Telegram</a></li>
                         </ul>
                     </div>
                 </div>
@@ -58,22 +63,112 @@
         </header>
 
         <!-- MAIN -->
-        <main>
+        <main class="main">
 
-            <!-- H1 -->
-            <h1></h1>
+            <!-- SECTIONs -->
+            <section class="main-about" id="about">
+                <h2 class="main-about-title">About me</h2>
+                <p class="main-about-text">
+                    I am 31 years old. An economist by profession. I have long wanted to learn how to develop useful
+                    services and applications. I study the frontend and backend. I really want to work in this area.
+                </p>
+            </section>
+            <section class="main-skills" id="skills">
+                <h2 class="main-skills-title">Skills</h2>
+                <ul class="main-skills-list">
+                    <li class="main-skills-item">HTML</li>
+                    <li class="main-skills-item">CSS</li>
+                    <li class="main-skills-item">Git</li>
+                    <li class="main-skills-item">JavaScript</li>
+                    <li class="main-skills-item">NodeJS</li>
+                    <li class="main-skills-item">ReactJS</li>
+                    <li class="main-skills-item">VueJS</li>
+                </ul>
+            </section>
+            <section class="main-code" id="code">
+                <h2 class="main-code-title">Code Example</h2>
+                <h3 class="main-code-desc">Count the number of JavaScript developers coming from Europe</h3>
+                <pre>
+                        <code>
+                            function countDevelopers(list) {
+                                let count = 0;
+                               list.forEach(e => e.continent == "Europe" && e.language == "JavaScript" ?  count++ : count);
+                                  return count;
+                              }
+                        </code>
+                    </pre>
+                <h3 class="main-code-desc">Find the odd int</h3>
+                <pre>
+                        <code>
+                            function findOdd(arr) {
+                                let count = 0;
+                                for (let i = 0; i < arr.length; i++) {
+                                  for (let j = 0; j < arr.length; j++) {
+                                    if (arr[i] === arr[j]) count++;
+                                  }
+                                  if (count % 2 != 0) return arr[i];
+                                }
+                              };
+                              }
+                        </code>
+                    </pre>
+            </section>
+            <section class="main-courses" id="courses">
+                <h2 class="main-courses-title">Courses</h2>
+                <ul class="main-courses-list">
+                    <li class="main-courses-item">
+                        <a class="main-courses-link" href="https://itgid.info/course/javascript-2">«JavaScript
+                            v.2.0»</a>
+                    </li>
+                    <li class="main-courses-item">
+                        <a class="main-courses-link" href="https://itgid.info/course/nodejs">«NodeJS»</a>
+                    </li>
+                    <li class="main-courses-item">
+                        <a class="main-courses-link" href="https://itgid.info/course/reactjs">«ReactJS»</a>
+                    </li>
+                    <li class="main-courses-item">
+                        <a class="main-courses-link" href="https://itgid.info/course/object-js">«OOP in JS»</a>
+                    </li>
+                    <li class="main-courses-item">
+                        <a class="main-courses-link" href="https://itgid.info/course/function-2021">«Function in JS»</a>
+                    </li>
 
-            <div>
-                <!-- SECTIONs -->
-                <section></section>
-                <section></section>
-                <section></section>
-                <section></section>
-            </div>
+                </ul>
+            </section>
+            <section class="main-projects" id="projects">
+                <h2 class="main-projects-title">Projects</h2>
+                <ul class="main-projects-list">
+                    <li class="main-projects-item">
+                        <a class="main-projects-link" href="https://everybarry.github.io/To-Do-List-JS/">«To-Do-List-JS»</a>
+                    </li>
+                    <li class="main-projects-item">
+                        <a class="main-projects-link" href="https://everybarry.github.io/ReactJS-Code-Editor/">«ReactJS-Code-Editor»</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="main-education" id="education">
+                <h2 class="main-education-title">Education</h2>
+                <p class='main-education-text'>St.Petersburg state university of film and television (Economics)</p> 
+            </section>
+            <section class="main-english" id="english">
+                <h2 class="main-english-title">English</h2>
+                <p class='main-english-text'>My english is at a basic level B1.</p> 
+            </section>
+
         </main>
 
         <!-- FOOTER -->
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer-copyright">
+                <p>© 2021 by Igor Burenkov</p>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a href="https://github.com/EveryBarry" class="footer-links-link" target="_blank">Github</a></li>
+                    <li class="footer-links-item"></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
