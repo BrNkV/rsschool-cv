@@ -8,18 +8,22 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --color-main: #202124;
+}
+
 .body {
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
     height: 100vh;
-    background: #202124;
+    background: var(--color-main);
     color: #fff;
 }
 
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: rgb(155, 144, 0);
+    background-color: rgb(112, 112, 112);
 }
 
 .nav-list {
@@ -54,18 +58,73 @@ html {
     flex-direction: row;
 }
 
-.header-image{
+.header-image {
     height: 100%;
+    width: 100%;
 }
 
-.header-person{
+.header-person {
+    flex-basis: calc(100% - 400px);
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
-.main{
+.header-name {
+    padding-left: 2em;
+    padding-right: 8em;
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.header-subtitle {
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+.header-contacts {
+    padding-right: 23em;
+}
+
+.header-contact-title {
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.header-contacts-list {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.header-contacts-item a {
+    text-decoration: none;
+    line-height: 20px;
+    color: white;
+}
+
+.main {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+}
+
+.main section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links-rsschool {
+    width: 50px;
+    height: 50px;
 }
