@@ -23,7 +23,7 @@ html {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: rgb(112, 112, 112);
+    /* background-color: rgb(112, 112, 112); */
 }
 
 .nav-list {
@@ -89,7 +89,7 @@ html {
 }
 
 .header-contacts {
-    padding-right: 23em;
+    padding-right: 12em;
 }
 
 .header-contact-title {
@@ -101,9 +101,13 @@ html {
 
 .header-contacts-list {
     list-style: none;
-    text-align: center;
     letter-spacing: 5px;
     font-weight: 600;
+}
+
+.header-contacts-item {
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .header-contacts-item a {
@@ -124,7 +128,58 @@ html {
     margin-bottom: 15px;
 }
 
+.section-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.section-text {
+    font-weight: 400;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-skills-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-courses-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-courses-item a {
+    color: white;
+}
+
+.main-projects-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-projects-link {
+    color: white;
+}
+
+
+
+.footer-links-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+.footer-links-item {
+    line-height: 80px;
+}
+
+.footer-links-item a{
+    color: white;
+}
+
 .footer-links-rsschool {
-    width: 50px;
-    height: 50px;
+    width: 80px;
 }
