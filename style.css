@@ -176,10 +176,27 @@ html {
     line-height: 80px;
 }
 
-.footer-links-item a{
+.footer-links-item a {
     color: white;
 }
 
 .footer-links-rsschool {
     width: 80px;
+}
+
+@media screen and (max-width: 920px) {
+    .header-content {
+        height: none;
+        display: inline;
+    }
+
+    .header-image {
+        height: 50%;
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .nav-list{
+        flex-direction: column
+    }
 }
