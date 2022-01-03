@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-main: #202124;
+}
+
+.body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-main);
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background-color: rgb(112, 112, 112); */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    font-size: 25px;
+    transition: .3s;
+}
+
+.nav-link:active {
+    color: rgb(18, 143, 137);
+}
+
+.header-content {
+    background-color: rgb(58, 48, 48);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-image {
+    height: 100%;
+    width: 100%;
+}
+
+.header-person {
+    flex-basis: calc(100% - 400px);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.header-name {
+    padding-left: 2em;
+    padding-right: 8em;
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.header-subtitle {
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+.header-contacts {
+    padding-right: 12em;
+}
+
+.header-contact-title {
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.header-contacts-list {
+    list-style: none;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.header-contacts-item {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.header-contacts-item a {
+    text-decoration: none;
+    line-height: 20px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.section-text {
+    font-weight: 400;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-skills-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-courses-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-courses-item a {
+    color: white;
+}
+
+.main-projects-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.main-projects-link {
+    color: white;
+}
+
+
+
+.footer-links-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+.footer-links-item {
+    line-height: 80px;
+}
+
+.footer-links-item a {
+    color: white;
+}
+
+.footer-links-rsschool {
+    width: 80px;
+}
+
+@media screen and (max-width: 920px) {
+    .header-content {
+        height: none;
+        display: inline;
+    }
+
+    .header-image {
+        height: 50%;
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    .nav-list{
+        flex-direction: column
+    }
+}
